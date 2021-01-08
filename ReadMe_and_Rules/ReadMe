@@ -1,0 +1,11 @@
+Steps to run the project:
+1) Start Hdfs, namenode, datanode and secondary node : /home/manojkhatokar/Downloads/work/hadoop-2.7.2/sbin/start-all.sh
+2) Start Apache nifi : /home/manojkhatokar/Downloads/work/nifi-1.12.1-bin/nifi-1.12.1/bin/./nifi start
+3) Open browser, for HDFS : localhost:50070
+		 for Apache nifi : localhost:8080
+4) To clear hdfs file system : /home/manojkhatokar/Downloads/work/hadoop-2.7.2/bin/./hdfs dfs -rm /user/flume/tweets/*     [for every new analysis you have to delete the existing tweets in hdfs]
+5) Run all the processors in nifi web client.
+5) To analyze the tweets collected , run the script named "sentiment_analyzer.py"
+6) Your output with percentage of positive, negative and neutral tweets will be displayed in the terminal.
+
+
